@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Receiver</title>
+</head>
+<body>
+  <h2>Receiver</h2>
+
+  <video id="localVideo" autoplay muted playsinline width="300"></video>
+  <video id="remoteVideo" autoplay muted playsinline width="300"></video>
+
+  <textarea id="offer" placeholder="Paste offer here" cols="80" rows="10"></textarea><br>
+  <button onclick="setOffer()">Set Offer & Create Answer</button><br><br>
+  <textarea id="answer" placeholder="Answer" cols="80" rows="10"></textarea>
+
+  <hr>
+  <input id="msgInput" placeholder="Message" />
+  <button onclick="sendMessage()">Send</button>
+  <div id="chat"></div>
+
+  <script src="receiver.js"></script>
+</body>
+</html>

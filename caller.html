@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>WebRTC Caller</title>
+  <script defer src="caller.js"></script>
+</head>
+<body>
+  <h2>Caller (Offer Creator)</h2>
+  <textarea id="localOffer" cols="80" rows="10" placeholder="Your Offer (auto-generated)"></textarea><br>
+  <textarea id="remoteAnswer" cols="80" rows="10" placeholder="Paste Answer Here"></textarea><br>
+  <button onclick="submitAnswer()">Set Remote Answer</button>
+  <hr>
+  <input type="text" id="msgBox" placeholder="Message to send" />
+  <button onclick="sendMessage()">Send</button>
+  <div id="chat"></div>
+</body>
+</html>
